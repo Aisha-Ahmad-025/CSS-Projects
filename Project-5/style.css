@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --purple500:#281154;
+    --purple300:#270082;
+    --purple600:#1b0058;
+    --red600:#dc0000;
+    --body:#f9f6ff;
+}
+html,body{
+    font-weight: 300;
+    line-height: 1.4;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+   
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+ul{
+list-style: none;
+}
+a{
+    text-decoration: none;
+     color: white;
+}
+header{
+    background-color: var(--purple300);
+    position: sticky;
+   top: 0;
+   /* z-index: 100; */
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+     color: white;
+     align-items: center;
+     padding: 20 0;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+.logo{
+font-size: 32px;
+font-weight: 600px;
+margin-left: 50px;
+margin-bottom: 10px;
+margin-top: 10px;
+
+}
+nav ul li:hover{
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-in-out;
+}
+.hero-section{
+    background-image: url(hero-image.jpeg);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: white;
+}
+.hero-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.hero-section h1{
+    font-size: 96px;
+}
+.hero-section h3{
+    font-size: 32px;
+}
+
+.music-section{
+    padding-top: 50px;
+    background: var(--purple500);
+}
+.music-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.img{
+     margin-top:-400px;
+    position: relative;
+    top: 400px;
+}
+button{
+    padding: 10px 15px;
+    border:none;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    opacity:0.8;
+    transition: 0.2s ease-in-out;
+}
+.btn{
+    background-color: var(--red600);
+    color: white;
+}
+.btn1{
+    background-color: var(--purple300);
+    color: white;
+}
+.about-music{
+    padding-top: 500px;
+    display: grid;
+    place-items: center;
+    gap: 30px;
+    /* margin: 10px 10px; */
+    text-align: center;
+    margin-bottom: 50px;
+}
+.about-music h4{
+      margin: 20px 20px;
+}
+.vedio-section{
+    background-image: url(video.jpeg);
+    height: 800px;
+    display:grid;
+    place-items: center;
+    color: white;
+    text-align: center;
+}
+.vedio-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin:0;
+}
+.gift-card{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 100px 100px;
+}
+.gift-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.up{
+    background-color: var(--purple600);
+    padding: 20px;
+
+}
+.up .container{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+.up h4{
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+}
+.down{
+    background-color: var(--purple300);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.gift-card{
+    scroll-margin: 120px;
+}
+.music-section{
+    scroll-margin: 50px;
+}
