@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.logo img{
+    width: 150px;
+    height: auto;
+}
+.center-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.search {
+    display: flex;
+}
+.search input {
+  width: 500px;
+  padding: 10px 20px;
+  border: 0.5px solid #ccc;
+}
+.search button{
+    border: none;
+    padding: 10px 20px;
+}
+.mic{
+    padding: 15px;
+    border-radius:50%;
+    place-items: center;
+    background-color: hsl(0, 7%, 97%);
+    margin-left: 5px;
+}
+.side-nav{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-right: 50px;
+}
+.side-nav img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+.tags{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.tag{
+    padding: 10px 20px;
+    border: 0.5px solid #ccc;
+    border-radius: 20px;
+}
+.dark{
+    background-color: black;
+    color: white;
+}
+.light{
+    background-color: #e4e1e1;
+    color: black;
+}
+.container{
+    display: flex;;
+}
+.asside{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    /* align-items: center;
+    justify-content: center; */
+}
+.asside p{
+    font-size: 10px;
+    /* margin-top: -5px; */
+}
+.bars{
+    margin-top: 20px   ;
+}
+.top-nav{
+    width: 100%;
+}
+main{
+    min-height: 100vh;
+    background-color: rgb(248, 248, 248);
+}
+/* ye sara mid wala ha container banany wala  */
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    /* gap: 20px; */
+    /* padding: 20px; */
+
+}
+
+.card{
+    padding: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.avatar-content{
+    padding-top: 10px;
+    display: flex;
+    gap: 5px;
+}
+.avatar-content img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.card h3{
+    font-size: 10px;
+    font-weight: 500;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.channel-name{
+    font-size: 12px;
+   font-weight: bold;
+}
+.content-stats{
+    display: flex;
+    gap: 10px;
+    font-size: 10px;
+}
